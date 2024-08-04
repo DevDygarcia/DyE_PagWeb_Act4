@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 4</title>
+
+</head>
+<body>
+    <h1>Bienvenidos!!!</h1>
+    <p>Esta es la actividad 4, Tabla Avanzada y Formulario</p>
+
+    <h2>Tabla Avanzada</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Correo Electrónico</th>
+                <th>País</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Juan Pérez</td>
+                <td>28</td>
+                <td>juan.perez@example.com</td>
+                <td>México</td>
+            </tr>
+            <tr>
+                <td>María López</td>
+                <td>34</td>
+                <td>maria.lopez@example.com</td>
+                <td>España</td>
+            </tr>
+            <tr>
+                <td>Carlos García</td>
+                <td>22</td>
+                <td>carlos.garcia@example.com</td>
+                <td>Argentina</td>
+            </tr>
+            <tr>
+                <td>Lucía Fernández</td>
+                <td>30</td>
+                <td>lucia.fernandez@example.com</td>
+                <td>Colombia</td>
+            </tr>
+            <tr>
+                <td>Diego Martínez</td>
+                <td>26</td>
+                <td>diego.martinez@example.com</td>
+                <td>Chile</td>
+            </tr>
+            <tr>
+                <td>Ana González</td>
+                <td>29</td>
+                <td>ana.gonzalez@example.com</td>
+                <td>Perú</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Formulario de Contacto</h2>
+    <form>
+        <label for="name">Nombre:</label><br>
+        <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required><br><br>
+        
+        <label for="email">Correo Electrónico:</label><br>
+        <input type="email" id="email" name="email" placeholder="Ingresa tu direccion de Correo" value="" required><br><br>
+
+        <label for="age">Edad:</label><br>
+        <input type="number" id="age" name="age" placeholder="Cuál es tu edad" required><br><br>
+        
+        <label for="country">País:</label><br>
+        <select id="country" name="country" multiple>
+            <option value="mexico" selected>México</option>
+            <option value="espana">España</option>
+            <option value="argentina">Argentina</option>
+            <option value="colombia" selected>Colombia</option>
+            <option value="chile">Chile</option>
+        </select><br><br>
+
+        <label for="gender">Género:</label><br>
+        <input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male">Masculino</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Femenino</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Otro</label><br><br>
+        
+        <label>Intereses:</label><br>
+        <input type="checkbox" id="interest1" name="interests" value="music" checked>
+        <label for="interest1">Música</label>
+        <input type="checkbox" id="interest2" name="interests" value="sports">
+        <label for="interest2">Deportes</label>
+        <input type="checkbox" id="interest3" name="interests" value="tech">
+        <label for="interest3">Tecnología</label><br><br>
+
+        <label for="dob">Fecha de Nacimiento:</label><br>
+        <input type="date" id="dob" name="dob" value="1990-01-01" required><br><br>
+        
+        <label for="phone">Número de Teléfono:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="Número de tléfono" value="" required><br><br>
+        
+        <label for="address">Dirección:</label><br>
+        <input type="text" id="address" name="address" placeholder="Indica tu dirección" value="" required><br><br>
+        
+        <label for="bio">Biografía:</label><br>
+        <textarea id="bio" name="bio" placeholder="Cuentame un poco sobre ti..." rows="4" cols="50"></textarea><br><br>
+
+        <label for="subscribe">Suscribirse:</label><br>
+        <input type="checkbox" id="subscribe" name="subscribe" required>
+        <label for="subscribe">Deseo recibir noticias y actualizaciones</label><br><br>
+        
+        <input type="submit" value="Enviar">
+        <input type='reset' value='Reiniciar'>
+    </form>
+    
+    <footer>© 2024 DevDygarcia. Todos los derechos reservados.</footer>
+</body>
+</html>
